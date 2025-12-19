@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시글 작성 - AI바이브웹</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+    <!-- 헤더 -->
+    <header>
+        <div class="header-container">
+            <h1 class="logo"><a href="index.html">AI바이브웹</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html#intro">소개</a></li>
+                    <li><a href="index.html#curriculum">커리큘럼</a></li>
+                    <li><a href="index.html#tech-stack">기술스택</a></li>
+                    <li><a href="index.html#effects">기대효과</a></li>
+                    <li><a href="board.html">커뮤니티</a></li>
+                    <li><a href="login.html" class="btn-login">로그인</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 메인 컨텐츠 -->
+    <main>
+        <!-- 게시글 작성 섹션 -->
+        <section id="board-write">
+            <h2>게시글 작성</h2>
+
+            <form id="write-form" class="write-form">
+                <!-- 제목 입력 -->
+                <div class="form-group">
+                    <label for="post-title">제목</label>
+                    <input type="text" id="post-title" name="title" placeholder="제목을 입력하세요" required>
+                </div>
+
+                <!-- 작성자 입력 -->
+                <div class="form-group">
+                    <label for="post-author">작성자</label>
+                    <input type="text" id="post-author" name="author" placeholder="작성자 이름을 입력하세요" required>
+                </div>
+
+                <!-- 내용 입력 -->
+                <div class="form-group">
+                    <label for="post-content">내용</label>
+                    <textarea id="post-content" name="content" rows="15" placeholder="내용을 입력하세요" required></textarea>
+                </div>
+
+                <!-- 버튼 영역 -->
+                <div class="form-actions">
+                    <a href="board.html" class="btn-cancel">취소</a>
+                    <button type="submit" class="btn-submit">작성하기</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- 맨 위로 가기 버튼 -->
+    <button id="scroll-to-top" aria-label="맨 위로 가기">↑</button>
+
+    <!-- Supabase CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase-config.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/board-write.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

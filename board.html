@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커뮤니티 - AI바이브웹</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+    <!-- 헤더 -->
+    <header>
+        <div class="header-container">
+            <h1 class="logo"><a href="index.html">AI바이브웹</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html#intro">소개</a></li>
+                    <li><a href="index.html#curriculum">커리큘럼</a></li>
+                    <li><a href="index.html#tech-stack">기술스택</a></li>
+                    <li><a href="index.html#effects">기대효과</a></li>
+                    <li><a href="board.html">커뮤니티</a></li>
+                    <li><a href="login.html" class="btn-login">로그인</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 메인 컨텐츠 -->
+    <main>
+        <!-- 커뮤니티 섹션 -->
+        <section id="board">
+            <h2>자유게시판</h2>
+
+            <!-- 게시판 상단 영역 -->
+            <div class="board-header">
+                <div class="board-info">
+                    <p>전체 게시글 <strong>10</strong>개</p>
+                </div>
+                <div class="board-search">
+                    <input type="text" placeholder="검색어를 입력하세요" class="search-input">
+                    <button class="search-btn">검색</button>
+                </div>
+            </div>
+
+            <!-- 게시글 목록 테이블 -->
+            <div class="board-table-wrapper">
+                <table class="board-table">
+                    <thead>
+                        <tr>
+                            <th class="col-no">No</th>
+                            <th class="col-title">제목</th>
+                            <th class="col-author">글쓴이</th>
+                            <th class="col-date">작성시간</th>
+                            <th class="col-likes">좋아요</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10</td>
+                            <td class="title-cell"><a href="board-detail.html">네이버 지도(v5) 임베드</a></td>
+                            <td>아임팔</td>
+                            <td>2019-12-17</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td class="title-cell"><a href="board-detail.html">제목</a></td>
+                            <td>아임팔</td>
+                            <td>2019-12-16</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td class="title-cell"><a href="board-detail.html">구글 지도 게시물에 임베드 하기</a></td>
+                            <td>아임팔</td>
+                            <td>2019-12-16</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td class="title-cell"><a href="board-detail.html">아이폰 7 플러스</a></td>
+                            <td>아임팔</td>
+                            <td>2018-05-14</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td class="title-cell"><a href="board-detail.html">분위기 최고네요~!</a></td>
+                            <td>아임팔</td>
+                            <td>2018-04-17</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td class="title-cell"><a href="board-detail.html">진짜로 갑니다~~</a></td>
+                            <td>아임팔</td>
+                            <td>2018-04-17</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td class="title-cell"><a href="board-detail.html">텀 메뉴 이미지</a></td>
+                            <td>아임팔</td>
+                            <td>2017-12-06</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td class="title-cell"><a href="board-detail.html">응원합니다!</a></td>
+                            <td>아임팔</td>
+                            <td>2017-11-20</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td class="title-cell"><a href="board-detail.html">이번엔 가즈아아아아아아!</a></td>
+                            <td>아임팔</td>
+                            <td>2017-11-20</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td class="title-cell"><a href="board-detail.html">제목만 보여주기!</a></td>
+                            <td>아임팔</td>
+                            <td>2017-11-20</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 페이지네이션 -->
+            <div class="pagination">
+                <button class="page-btn">&lt;</button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn">5</button>
+                <button class="page-btn">&gt;</button>
+            </div>
+
+            <!-- 글쓰기 버튼 -->
+            <div class="board-actions">
+                <a href="board-write.html" class="btn-write">글쓰기</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- 맨 위로 가기 버튼 -->
+    <button id="scroll-to-top" aria-label="맨 위로 가기">↑</button>
+
+    <!-- Supabase CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase-config.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/board.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시글 상세 - AI바이브웹</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+    <!-- 헤더 -->
+    <header>
+        <div class="header-container">
+            <h1 class="logo"><a href="index.html">AI바이브웹</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html#intro">소개</a></li>
+                    <li><a href="index.html#curriculum">커리큘럼</a></li>
+                    <li><a href="index.html#tech-stack">기술스택</a></li>
+                    <li><a href="index.html#effects">기대효과</a></li>
+                    <li><a href="board.html">커뮤니티</a></li>
+                    <li><a href="login.html" class="btn-login">로그인</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 메인 컨텐츠 -->
+    <main>
+        <!-- 게시글 상세 섹션 -->
+        <section id="board-detail">
+            <div class="detail-container">
+                <!-- 게시글 헤더 -->
+                <div class="detail-header">
+                    <h2 class="detail-title">네이버 지도(v5) 임베드</h2>
+                    <div class="detail-meta">
+                        <span class="meta-author">작성자: <strong>아임팔</strong></span>
+                        <span class="meta-date">작성일: <strong>2019-12-17</strong></span>
+                        <span class="meta-likes">좋아요: <strong>0</strong></span>
+                    </div>
+                </div>
+
+                <!-- 게시글 내용 -->
+                <div class="detail-content">
+                    <p>여기에 게시글 내용이 표시됩니다.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+                <!-- 게시글 액션 버튼 -->
+                <div class="detail-actions">
+                    <button class="btn-like">좋아요</button>
+                    <div class="detail-buttons">
+                        <a href="board.html" class="btn-list">목록</a>
+                        <button class="btn-edit">수정</button>
+                        <button class="btn-delete">삭제</button>
+                    </div>
+                </div>
+
+                <!-- 댓글 섹션 -->
+                <div class="comments-section">
+                    <h3>댓글 <span class="comment-count">0</span></h3>
+
+                    <!-- 댓글 작성 폼 -->
+                    <div class="comment-write">
+                        <textarea placeholder="댓글을 입력하세요" rows="4"></textarea>
+                        <button class="btn-comment-submit">댓글 작성</button>
+                    </div>
+
+                    <!-- 댓글 목록 -->
+                    <div class="comment-list">
+                        <!-- 댓글이 없을 때 -->
+                        <p class="no-comments">아직 댓글이 없습니다. 첫 댓글을 작성해보세요!</p>
+
+                        <!-- 댓글 예시 (실제로는 JavaScript로 동적 생성) -->
+                        <!-- <div class="comment-item">
+                            <div class="comment-header">
+                                <span class="comment-author">사용자1</span>
+                                <span class="comment-date">2025-12-19</span>
+                            </div>
+                            <div class="comment-content">
+                                <p>댓글 내용입니다.</p>
+                            </div>
+                            <div class="comment-actions">
+                                <button class="btn-comment-edit">수정</button>
+                                <button class="btn-comment-delete">삭제</button>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 맨 위로 가기 버튼 -->
+    <button id="scroll-to-top" aria-label="맨 위로 가기">↑</button>
+
+    <!-- Supabase CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase-config.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/board-detail.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
